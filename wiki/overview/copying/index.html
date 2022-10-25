@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>nav{padding:.5em;overflow:auto;display:flex;justify-content:center;background-color:var(--background);border-radius:0 0 1em 1em}.main-menu{padding:0;margin:0;display:flex;justify-content:center;flex-wrap:wrap}.links,.navbar{display:flex;align-items:center;justify-content:center;padding:0;flex-wrap:wrap}.social-links i{font-size:1.75em;margin:.25em;color:var(--primary-text)}.social-links i:hover{color:var(--link);cursor:pointer}.links .button{margin:.25em}.navbar{flex-direction:column}.navbar a{display:flex;align-items:center}.home img{height:4em;width:auto}.nav-item{display:inline-block;font-size:1.2em;margin:.5em}.nav-item a{color:var(--primary-text);text-decoration:none}.nav-item-active{font-weight:700;font-size:1.25em}.hero{position:relative;color:#fff;z-index:0}.hero-description{color:#fff}.hero-title{font-size:3em}header .container{flex-direction:column}header .links{flex-direction:column}@media (min-width:64em){nav{justify-content:space-between}.navbar{flex-direction:row}header .container{flex-direction:row}header .links{flex-direction:row}}code[class*=language-],pre[class*=language-]{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;background:var(--code);color:#f8f8f2}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#75715e}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#fd971f}.token.property{color:#f4bf75}.token.tag{color:#66d9ef}.token.string{color:#a1efe4}.token.selector{color:#ae81ff}.token.attr-name{color:#fd971f}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#a1efe4}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#a6e22e}.token.atrule,.token.regex,.token.statement{color:#a1efe4}.token.placeholder,.token.variable{color:#66d9ef}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #f9f8f5;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#f92672}.token.entity{cursor:help}pre>code.highlight{outline:.4em solid #f92672;outline-offset:0.4em}.wiki-content,.wiki-toc{margin-top:1em}.wiki-toc{background-color:var(--accent);border-radius:1em;padding:1em;font-size:1rem;flex:1}.wiki-toc-list{display:flex;flex-wrap:wrap;justify-content:space-between;padding-left:0;padding-right:0;margin:0;list-style:none}.wiki-toc-list li{line-height:1.466666666667}.wiki-toc-list ul{padding:0 0 .75em 0;margin:0;list-style:none}.wiki-toc-list ul ul{padding-bottom:0;padding-left:.625rem}.wiki-toc-list ul ul>li:not(.wiki-toc-active)>ul>li:not(.wiki-toc-active){display:none}.wiki-toc-list a{padding:.15em .25em;display:block}.wiki-toc-list a:not(:hover){text-decoration:none}.wiki-toc-list li{margin:0;padding:0}.wiki-toc-list>li{flex-grow:1;flex-basis:14.375rem}.wiki-toc-list>li>a{color:var(--primary-text);font-weight:700;border-bottom:1px solid #ddd;margin-bottom:.25em}.wiki-toc-list li.wiki-toc-active>a{background-color:var(--accent)}.wiki-toc-list li.wiki-toc-active>ul,.wiki-toc-list ul.wiki-toc-active{display:block}.wiki-cat-list-active{font-weight:700}.inlinelist{padding:0}.inlinelist-no-nest ol,.inlinelist-no-nest ul{display:none}.wiki-tag{display:inline}.wiki-tag a{display:inline-flex;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin:.5em .5em .5em 0;color:var(--primary-text);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}.wiki-tag:hover a{text-decoration:underline}.wiki-tag-active a{font-weight:700}@media (min-width:64em){.wiki-content{width:80%}.wiki-toc{margin-right:1em}}.download-tab-list{list-style:none;display:flex;justify-content:flex-start;list-style:none;padding:0;margin-bottom:0;border-radius:1em 1em 0 0;background-color:var(--accent);flex-wrap:wrap;overflow:hidden}.download-tab-list li{flex-grow:1;display:block}.download-tab-list a{color:var(--primary-text);font-size:1.2em;text-decoration:none;display:flex;justify-content:center;padding:.75em .5em}.download-tab-list a:hover{background-color:var(--accent-light)}.download-tab-list i{color:var(--primary-text);font-size:1.2em;text-decoration:none;display:flex;justify-content:center;margin-right:.25em}.download-tab-active a{background-color:var(--background)}.download-content{background-color:var(--background);padding:1em;border-radius:0 0 1em 1em}.download-content .column div{width:100%}.download-content .button{width:100%;display:block;margin-bottom:1em;margin-left:0}@media (min-width:64em){.download-tab-list a{border-radius:1rem 1rem 0 0}.download-content .column div{width:80%}}.postlist{list-style:none;padding:0}.postlist-item{background-color:var(--background);border-radius:1em;padding:1em;display:flex;flex-wrap:wrap;align-items:baseline;counter-increment:start-from -1;line-height:1.8}.postlist :first-child{margin-top:0}.postlist{margin-top:0}.postlist-item:before{display:inline-block;pointer-events:none;content:"" counter(start-from,decimal-leading-zero) ". ";line-height:100%;text-align:right}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--darkgray)}.postlist-item:not(:first-child){margin-top:2em}.postlist-date{word-spacing:-0.5px}.postlist-link{font-size:1.2em;padding-left:.25em;padding-right:1em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:500}.postlist-description{width:100%;border-left:var(--primary) .25em solid;padding:.5em;margin-top:.33em}.tmpl-home .postlist-link{font-size:1.1875em;font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin-left:1em;color:var(--primary-text);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}a.post-tag,a.post-tag:visited{color:inherit}a.post-tag:focus,a.post-tag:hover{background-color:var(--lightgray)}.postlist-item>.post-tag{align-self:center}.user-list{display:flex;flex-wrap:wrap;align-content:space-around;list-style:none;padding:0}.user-info{position:relative;margin:.5em;width:10em;border-radius:1em;overflow:hidden;background-color:var(--background);text-decoration:none;color:var(--primary-text);max-height:10em}.user-contrib{width:3em;background-color:var(--accent)}.user-contrib:hover{border:.2em solid var(--primary)}.user-info img{display:block;width:100%;height:auto}.user-name{color:#fff;font-size:1.2em;overflow-wrap:break-word;text-align:center}.user-info-overlay{position:absolute;display:flex;align-items:center;justify-content:center;top:0;bottom:0;left:0;right:0;opacity:0;transition:.3s ease;background-color:var(--primary)}.user-info:hover .user-info-overlay{opacity:1}:root{--primary-text:#ffffff;--grad-primary:#df6277ff;--background:#15181c;--accent:#21242b;--accent-light:#313540;--code:#313540;--disabled:#666;--primary:hsl(350, 66%, 63%);--link:hsl(214, 46%, 52%);--info:hsl(274, 32%, 42%);--success:hsl(145, 27%, 59%);--warn:hsl(49, 85%, 69%);--danger:hsl(17, 95%, 70%);--primary-dark:hsl(350, 66%, 55%);--link-dark:hsl(214, 46%, 42%);--info-dark:hsl(274, 32%, 32%);--success-dark:hsl(145, 27%, 49%);--warn-dark:hsl(49, 85%, 60%);--danger-dark:hsl(17, 95%, 65%);--primary-light:hsl(350, 66%, 70%);--link-light:hsl(214, 46%, 67%);--info-light:hsl(274, 32%, 56%);--success-light:hsl(145, 27%, 67%);--warn-light:hsl(49, 85%, 79%);--danger-light:hsl(17, 95%, 80%);background-color:var(--background)}@media (prefers-color-scheme:light){:root{--primary-text:#333;--background:#ffffff;--accent:#e0e0e0;--accent-light:#d0d0d0}}*{box-sizing:border-box}body,html{padding:0;margin:0;font-family:Inter,-apple-system,system-ui,sans-serif;color:var(--primary-text)}.bg{height:100vh;width:100vw;position:fixed;background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('/img/background/prism-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover}*{box-sizing:border-box}p:last-child{margin-bottom:0}.tmpl-post li,iframe,img,p{max-width:min(100%)}.tmpl-post li,p{line-height:1.45}a{color:var(--link)}table{margin:1em 0}table td,table th{padding-right:1em}blockquote{border-left:var(--primary) .25em solid;padding:.5em;margin:0}code,pre{font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;line-height:1.5;border-radius:1em}.top{margin-top:1em}pre{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;background-color:var(--code);color:#fff;overflow:auto}code{word-break:break-all;color:#fff;background-color:var(--code)}.highlight-line{display:block;padding:.125em 1em;text-decoration:none;color:inherit}.highlight-line:empty:before{content:" "}.highlight-line+br{display:none}.highlight-line-isdir{color:#b0b0b0;background-color:#222}.highlight-line-active{background-color:#444;background-color:hsla(0,0%,27%,.8)}.highlight-line-add{background-color:#45844b}.highlight-line-remove{background-color:#902f2f}.container{max-width:90em;margin:0 auto;position:relative}.content{background-color:var(--background);border-radius:1em;padding:1em}.center{text-align:center;margin:auto}.infobox{background-color:var(--accent);padding:1em;border-radius:1em}.button{display:inline-block;border:none;position:relative;color:#fff;padding:.5em 1.5em;list-style:none;font-size:1.2em;font-family:Inter,sans-serif;font-weight:600;text-decoration:none;background-color:var(--primary);border-radius:.365em;transition:.2s ease;background-position-x:100%;cursor:pointer}.button[disabled]{opacity:.5;pointer-events:none}.button:hover{background-color:var(--primary-dark)}.button.type-link{background-color:var(--link)}.button.type-link:hover{background-color:var(--link-dark)}.button.type-info{background-color:var(--info)}.button.type-info:hover{background-color:var(--info-dark)}.button.type-success{background-color:var(--success)}.button.type-success:hover{background-color:var(--success-dark)}.button.type-warn{background-color:var(--warn);color:#000}.button.type-warn:hover{background-color:var(--warn-dark);color:#000}.button.type-danger{background-color:var(--danger)}.button.type-danger:hover{background-color:var(--danger-dark)}.button.size-large{font-size:1.5em}.button.size-small{font-size:1em}.direct-link{text-decoration:none;font-style:normal;margin-left:.1em}a.direct-link,a.direct-link:visited{color:transparent}:hover>a.direct-link,:hover>a.direct-link:visited,a.direct-link:focus,a.direct-link:focus:visited{color:#aaa}.download-links{padding:0}.download-links li{display:inline;margin:.25em}.row{display:flex;flex-direction:column}.column{display:flex;align-items:center;justify-content:center;padding:1em;text-align:center}.column img{height:auto}.subtitle{font-size:1.5em;text-align:center}.cards{display:flex;flex-wrap:wrap;flex-direction:column;gap:1em}.card{flex:1;padding:1em;text-align:center;background-color:var(--accent)}.card .button{width:100%;margin:0}.notification{border-radius:1em;position:relative;padding:1.25rem 2.5rem 1.25rem 1.5rem;margin-bottom:1em;color:#fff}.notification.type-primary{background-color:var(--primary)}.notification.type-link{background-color:var(--link)}.notification.type-info{background-color:var(--info)}.notification.type-success{background-color:var(--success)}.notification.type-warn{background-color:var(--warn);color:#000}.notification.type-danger{background-color:var(--danger)}.footer{text-align:center;padding:2em;color:#fff}@media (min-width:64em){.row{flex-direction:row}.row-reverse{flex-direction:row-reverse}.column{flex:50%}.wiki-content{padding-left:1em}.cards{flex-direction:row;justify-content:space-between}.card{align-self:flex-start}}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Launcher - Copying</title>
+    <meta name="description" content="An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Prism Launcher">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Prism Launcher">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/inter/index.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/inter/600.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/inter/700.css">
+    <link rel="stylesheet" href="/assets/forkawesome/css/fork-awesome.min.css">
+    <!-- incredibly based web app to make mod lists at https://moddermore.vercel.app -->
+  </head>
+  <body>
+    <header>
+  <div class="bg"></div>
+  <nav class="container">
+    <div class="navbar">
+      <a class="home" href="/" aria-label="Prism Launcher">
+        <img src="/img/logo.svg" alt="Prism Launcher logo" />
+      </a>
+      <ul class="main-menu">
+        <li class="nav-item">
+          <a href="/news/">News</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about/">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/wiki/">Wiki</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#get-involved">Community</a>
+        </li>
+      </ul>
+    </div>
+    <div class="links">
+      <div class="social-links">
+        <a href="https://discord.gg/prismlauncher" target="_blank" aria-label="Discord"><i class="fa fa-discord"></i></a>
+        <a href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank" aria-label="Matrix"><i class="fa fa-matrix-org"></i></a>
+        <a href="https://www.reddit.com/r/PrismLauncher/" target="_blank" aria-label="Reddit"><i class="fa fa-reddit"></i></a>
+        <a href="https://github.com/PrismLauncher/PrismLauncher" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
+      </div>
+      <div>
+        <a class="button" href="/download/">Download</a>
+        <a class="button type-link" href="https://opencollective.com/prismlauncher" target="_blank">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  
+</header>
+
+<main class="container tmpl-wiki">
+  <div class="row row-reverse">
+  <div class="wiki-content content">
+  <!---  
+    <nav class="breadcrumb" aria-labelledby="breadcrumb">
+      <h2 class="sr-only" id="breadcrumb">Breadcrumbs: </h2>
+      <ul class="lo lo-inline"><li class="lo-c"><a href="/wiki/development/">Development</a></li></ul>
+    </nav> 
+     --->
+    
+    <h2 id="prism-launcher" tabindex="-1">Prism Launcher <a class="direct-link" href="#prism-launcher" aria-hidden="true">#</a></h2>
+<pre><code> Prism Launcher - Minecraft Launcher
+ Copyright (C) 2022 Prism Launcher Contributors
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+This file incorporates work covered by the following copyright and
+permission notice:
+
+     Copyright 2013-2021 MultiMC Contributors
+
+     Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+</code></pre>
+<h2 id="polymc" tabindex="-1">PolyMC <a class="direct-link" href="#polymc" aria-hidden="true">#</a></h2>
+<pre><code> PolyMC - Minecraft Launcher
+ Copyright (C) 2021-2022 PolyMC Contributors
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+This file incorporates work covered by the following copyright and
+permission notice:
+
+     Copyright 2013-2021 MultiMC Contributors
+
+     Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+</code></pre>
+<h2 id="mingw-w64-runtime-(windows)" tabindex="-1">MinGW-w64 runtime (Windows) <a class="direct-link" href="#mingw-w64-runtime-(windows)" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (c) 2009, 2010, 2011, 2012, 2013 by the mingw-w64 project
+
+This license has been certified as open source. It has also been designated
+as GPL compatible by the Free Software Foundation (FSF).
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions in source code must retain the accompanying copyright
+  notice, this list of conditions, and the following disclaimer.
+2. Redistributions in binary form must reproduce the accompanying
+  copyright notice, this list of conditions, and the following disclaimer
+  in the documentation and/or other materials provided with the
+  distribution.
+3. Names of the copyright holders must not be used to endorse or promote
+  products derived from this software without prior written permission
+  from the copyright holders.
+4. The right to distribute this software or to use it for any purpose does
+  not give you the right to use Servicemarks (sm) or Trademarks (tm) of
+  the copyright holders.  Use of them is covered by separate agreement
+  with the copyright holders.
+5. If any files are modified, you must cause the modified files to carry
+  prominent notices stating that you changed the files and the date of
+  any change.
+
+Disclaimer
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Information on third party licenses used in MinGW-w64 can be found in its COPYING.MinGW-w64-runtime.txt.
+</code></pre>
+<h2 id="qt-56" tabindex="-1">Qt 5/6 <a class="direct-link" href="#qt-56" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (C) 2022 The Qt Company Ltd and other contributors.
+Contact: https://www.qt.io/licensing
+
+Licensed under LGPL v3
+</code></pre>
+<h2 id="libnbt++" tabindex="-1">libnbt++ <a class="direct-link" href="#libnbt++" aria-hidden="true">#</a></h2>
+<pre><code>libnbt++ - A library for the Minecraft Named Binary Tag format.
+Copyright (C) 2013, 2015  ljfa-ag
+
+libnbt++ is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+libnbt++ is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with libnbt++.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</code></pre>
+<h2 id="rainbow-(kguiaddons)" tabindex="-1">rainbow (KGuiAddons) <a class="direct-link" href="#rainbow-(kguiaddons)" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (C) 2007 Matthew Woehlke &lt;mw_triad@users.sourceforge.net&gt;
+Copyright (C) 2007 Olaf Schmidt &lt;ojschmidt@kde.org&gt;
+Copyright (C) 2007 Thomas Zander &lt;zander@kde.org&gt;
+Copyright (C) 2007 Zack Rusin &lt;zack@kde.org&gt;
+Copyright (C) 2015 Petr Mrazek &lt;peterix@gmail.com&gt;
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Library General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Library General Public License for more details.
+
+You should have received a copy of the GNU Library General Public License
+along with this library; see the file COPYING.LIB.  If not, write to
+the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301, USA.
+</code></pre>
+<h2 id="hoedown" tabindex="-1">Hoedown <a class="direct-link" href="#hoedown" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (c) 2008, Natacha Porté
+Copyright (c) 2011, Vicent Martí
+Copyright (c) 2014, Xavier Mendez, Devin Torres and the Hoedown authors
+
+Permission to use, copy, modify, and distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+</code></pre>
+<h2 id="batch-icon-set" tabindex="-1">Batch icon set <a class="direct-link" href="#batch-icon-set" aria-hidden="true">#</a></h2>
+<pre><code>You are free to use Batch (the &quot;icon set&quot;) or any part thereof (the &quot;icons&quot;)
+in any personal, open-source or commercial work without obligation of payment
+(monetary or otherwise) or attribution. Do not sell the icon set, host
+the icon set or rent the icon set (either in existing or modified form).
+
+While attribution is optional, it is always appreciated.
+
+Intellectual property rights are not transferred with the download of the icons.
+
+EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE LAW, IN NO EVENT WILL ADAM WHITCROFT
+BE LIABLE TO YOU ON ANY LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL,
+PUNITIVE OR EXEMPLARY DAMAGES ARISING OUT OF THE USE OF THE ICONS,
+EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</code></pre>
+<h2 id="material-design-icons" tabindex="-1">Material Design Icons <a class="direct-link" href="#material-design-icons" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (c) 2014, Austin Andrews (http://materialdesignicons.com/),
+with Reserved Font Name Material Design Icons.
+Copyright (c) 2014, Google (http://www.google.com/design/)
+uses the license at https://github.com/google/material-design-icons/blob/master/LICENSE
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+</code></pre>
+<h2 id="quazip" tabindex="-1">Quazip <a class="direct-link" href="#quazip" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (C) 2005-2021 Sergey A. Tachenov
+
+The QuaZip library is licensed under the GNU Lesser General Public
+License V2.1 plus a static linking exception.
+
+The original ZIP/UNZIP package (MiniZip) is copyrighted by Gilles
+Vollant and contributors, see quazip/(un)zip.h files for details.
+Basically it's the zlib license.
+
+STATIC LINKING EXCEPTION
+
+The copyright holders give you permission to link this library with
+independent modules to produce an executable, regardless of the license
+terms of these independent modules, and to copy and distribute the
+resulting executable under terms of your choice, provided that you also
+meet, for each linked independent module, the terms and conditions of
+the license of that module. An independent module is a module which is
+not derived from or based on this library. If you modify this library,
+you must extend this exception to your version of the library.
+
+See COPYING file for the full LGPL text.
+</code></pre>
+<h2 id="launcher-(librarieslauncher)" tabindex="-1">launcher (<code>libraries/launcher</code>) <a class="direct-link" href="#launcher-(librarieslauncher)" aria-hidden="true">#</a></h2>
+<pre><code> PolyMC - Minecraft Launcher
+ Copyright (C) 2021-2022 PolyMC Contributors
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ Linking this library statically or dynamically with other modules is
+ making a combined work based on this library. Thus, the terms and
+ conditions of the GNU General Public License cover the whole
+ combination.
+
+ As a special exception, the copyright holders of this library give
+ you permission to link this library with independent modules to
+ produce an executable, regardless of the license terms of these
+ independent modules, and to copy and distribute the resulting
+ executable under terms of your choice, provided that you also meet,
+ for each linked independent module, the terms and conditions of the
+ license of that module. An independent module is a module which is
+ not derived from or based on this library. If you modify this
+ library, you may extend this exception to your version of the
+ library, but you are not obliged to do so. If you do not wish to do
+ so, delete this exception statement from your version.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+This file incorporates work covered by the following copyright and
+permission notice:
+
+     Copyright 2013-2021 MultiMC Contributors
+
+     Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+</code></pre>
+<h2 id="lionshead" tabindex="-1">lionshead <a class="direct-link" href="#lionshead" aria-hidden="true">#</a></h2>
+<pre><code>Code has been taken from https://github.com/natefoo/lionshead and loosely
+translated to C++ laced with Qt.
+
+MIT License
+
+Copyright (c) 2017 Nate Coraor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+<h2 id="tomlplusplus" tabindex="-1">tomlplusplus <a class="direct-link" href="#tomlplusplus" aria-hidden="true">#</a></h2>
+<pre><code>MIT License
+
+Copyright (c) Mark Gillard &lt;mark.gillard@outlook.com.au&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+<h2 id="o2-(katabasis-fork)" tabindex="-1">O2 (Katabasis fork) <a class="direct-link" href="#o2-(katabasis-fork)" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (c) 2012, Akos Polster
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</code></pre>
+<h2 id="gamemode" tabindex="-1">Gamemode <a class="direct-link" href="#gamemode" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (c) 2017-2022, Feral Interactive
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+* Neither the name of Feral Interactive nor the names of its contributors
+may be used to endorse or promote products derived from this software
+without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+</code></pre>
+<h2 id="gulrakfilesystem" tabindex="-1">gulrak/filesystem <a class="direct-link" href="#gulrakfilesystem" aria-hidden="true">#</a></h2>
+<pre><code>Copyright (c) 2018, Steffen Schümann &lt;s.schuemann@pobox.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+
+    
+    
+    <hr>
+    <h3>Pages in Development:</h3>
+    <ul class="inlinelist inlinelist-no-nest"><li class="wiki-tag"><a href="/wiki/development/development-builds/">Development Builds</a></li>
+<li class="wiki-tag"><a href="/wiki/development/build-instructions/">Build instructions</a></li>
+<li class="wiki-tag wiki-tag-active"><a href="/wiki/overview/copying/">Copying</a></li>
+<li class="wiki-tag"><a href="/wiki/development/translating/">Translating Prism Launcher</a></li></ul>
+    
+
+    
+  </div>
+  <div class="wiki-toc"><ul class="wiki-toc-list"><li><a href="/wiki/">Overview</a><ul><li><a href="/wiki/overview/code-of-conduct/">Code of Conduct</a></li>
+<li><a href="/wiki/overview/feedback-bugs/">Feedback & Bugs</a></li>
+<li><a href="/wiki/overview/faq/">FAQ</a></li></ul></li>
+<li><a href="/wiki/getting-started/">Getting Started</a><ul><li><a href="/wiki/getting-started/installing-prismlauncher/">Installing Prism Launcher</a></li>
+<li><a href="/wiki/getting-started/installing-java/">Installing Java</a></li>
+<li><a href="/wiki/getting-started/migrating-multimc/">Migrating from MultiMC</a></li>
+<li><a href="/wiki/getting-started/create-instance/">Create an Instance</a></li>
+<li><a href="/wiki/getting-started/download-modpacks/">Downloading Modpacks</a></li>
+<li><a href="/wiki/getting-started/download-mods/">Downloading Mods</a></li>
+<li><a href="/wiki/getting-started/install-of-alternatives/">OptiFine alternatives</a></li>
+<li><a href="/wiki/getting-started/installing-optifine/">Installing OptiFine</a></li>
+<li><a href="/wiki/getting-started/controller-support/">Controller Support</a></li>
+<li><a href="/wiki/getting-started/command-line-interface/">Command Line Interface</a></li></ul></li>
+<li><a href="/wiki/help-pages/">Help pages</a><ul><li><a href="/wiki/help-pages/Java-settings/">Java Settings</a></li>
+<li><a href="/wiki/help-pages/Loader-mods/">Mods</a></li>
+<li><a href="/wiki/help-pages/Mod-platform/">Mod Downloader</a></li></ul></li>
+<li><a href="/wiki/development/">Development</a><ul><li><a href="/wiki/development/development-builds/">Development Builds</a></li>
+<li><a href="/wiki/development/build-instructions/">Build instructions</a></li>
+<li class="wiki-toc-active"><a href="/wiki/overview/copying/">Copying</a></li>
+<li><a href="/wiki/development/translating/">Translating Prism Launcher</a></li></ul></li>
+<li><a href="/wiki/branding/">Branding</a></li></ul>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="container">
+        <a href="https://github.com/PrismLauncher/prismlauncher.org/edit/master/./src/wiki/overview/copying.md" class="elv-externalexempt button type-link size-small">Edit this page</a>
+        © 2022 Prism Launcher Contributors
+        </h1>
+    </div>
+</div>
+
+</footer>
+
+  </body>
+</html>
