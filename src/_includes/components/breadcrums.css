@@ -1,0 +1,25 @@
+.lo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb ol,
+.breadcrumb ul {
+	--lo-margin-h: .5em;
+	list-style-type: none;
+	padding: 0;
+    margin: 0;
+}
+.breadcrumb li {
+	white-space: nowrap;
+}
+.breadcrumb.breadcrumb li {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Restore list semantics for voiceover:
+ * https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+ */
+.breadcrumb li:before {
+	content: "/";
+}

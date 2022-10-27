@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="download-content">
+<div class="tab-content">
   <div class="row">
     <div class="column">
       <div>

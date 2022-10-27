@@ -11,6 +11,6 @@ eleventyComputed:
   }
 </style>
 
-{{ collections.download | eleventyNavigation | eleventyNavigationToHtml({ activeKey: eleventyNavigation.key, listClass: 'download-tab-list', activeListItemClass: 'download-tab-active' }) | safe }}
+{{ collections.download | eleventyNavigation | eleventyNavigationToHtml({ activeKey: eleventyNavigation.key, listClass: 'tab-list', activeListItemClass: 'tab-active' }) | safe }}
 
 {{ content | safe }}
